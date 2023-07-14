@@ -1,0 +1,25 @@
+import  java.io*;
+import java.util.*;
+class Primenum
+{
+public int countprimesinrange(int input1,int input2)
+{
+int i;
+int j;
+int count=0;
+int cou=0;
+for(i=input1;i<=input2;i++)
+{
+   int n=i;
+   for(j=2;j<n;j++)
+   {
+      if(i%j==0)
+      cou++;
+   }
+   if(cou==0)
+     count++;
+     cou=0;
+ }
+return count;
+}
+}
